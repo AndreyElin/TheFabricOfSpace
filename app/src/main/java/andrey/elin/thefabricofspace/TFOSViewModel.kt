@@ -21,7 +21,8 @@ class TFOSViewModel(
 
     private fun sendServerRequest() {
         liveDataForViewToObserve.value = TfosData.Loading(null)
-        val apiKey: String = "DEMO_KEY"
+        val apiKey: String = BuildConfig.NASA_API_KEY
+
         if (apiKey.isBlank()) {
             TfosData.Error(Throwable("You need API key"))
         } else {

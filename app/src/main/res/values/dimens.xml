@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bnl_marginStart">8dp</dimen>
+    <dimen name="bnl_marginTop">8dp</dimen>
+    <dimen name="bnl_marginEnd">8dp</dimen>
+    <dimen name="bsl_peekHeight">100dp</dimen>
+    <dimen name="bsl_view_width">30dp</dimen>
+    <dimen name="bsl_view_height">2dp</dimen>
+    <dimen name="bsl_view_marginTop">5dp</dimen>
+    <dimen name="bsl_tw__marginTop">5dp</dimen>
+    <dimen name="bsl_tw_paddingStart">10dp</dimen>
+    <dimen name="bsl_tw_paddingEnd">10dp</dimen>
+    <dimen name="fs__marginBottom">100dp</dimen>
+    <dimen name="fs_tw_margin">18dp</dimen>
+    <dimen name="fs_tw_textSize">18sp</dimen>
+    <dimen name="fs_chipGroup_marginStart">40dp</dimen>
+    <dimen name="fs_chipGroup_marginEnd">40dp</dimen>
+    <dimen name="tfosFragment_paddingStart">10dp</dimen>
+    <dimen name="tfosFragment_paddingEnd">10dp</dimen>
+    <dimen name="equilateralImageView_marginTop">4dp</dimen>
+</resources>
