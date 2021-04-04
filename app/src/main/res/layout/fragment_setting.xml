@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorAccent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/fs_tw_margin"
+        android:text="@string/fs_select_theme"
+        android:textSize="@dimen/fs_tw_textSize" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/fs_chipGroup_marginStart"
+            android:layout_marginEnd="@dimen/fs_chipGroup_marginEnd"
+            android:layout_marginBottom="@dimen/fs__marginBottom"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/mars_chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipBackgroundColor="@color/red_500"
+                android:textAlignment="center"
+                android:checked="true"
+                android:text="@string/fs_mars" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/moon_chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipBackgroundColor="@color/yellow_500"
+                android:textAlignment="center"
+                android:text="@string/fs_moon" />
+
+            <com.google.android.material.chip.Chip
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:id="@+id/earth_chip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:chipBackgroundColor="@color/purple_500"
+                android:textAlignment="center"
+                android:text="@string/fs_earth" />
+        </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>

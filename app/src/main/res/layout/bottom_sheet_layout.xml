@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?colorAccent"
+    android:visibility="visible"
+    app:behavior_peekHeight="@dimen/bsl_peekHeight"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:visibility="visible">
+
+    <View
+        android:id="@+id/bottom_sheet_line"
+        android:layout_width="@dimen/bsl_view_width"
+        android:layout_height="@dimen/bsl_view_height"
+        android:layout_marginTop="@dimen/bsl_view_marginTop"
+        android:background="?colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_description_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bsl_tw__marginTop"
+        android:paddingStart="@dimen/bsl_tw_paddingStart"
+        android:paddingEnd="@dimen/bsl_tw_paddingEnd"
+        android:textColor="?colorOnSecondary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_line"
+        tools:text="Two Clusters and a Comet" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/bsl_tw_paddingStart"
+        android:paddingEnd="@dimen/bsl_tw_paddingEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_description_header"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
